@@ -52,8 +52,8 @@ work-bench|https://yourcityhere.craigslist.org/search/sss?format=rss&amp;query=w
 
 This must run from the Linux command shell. There are two input parameters:
 
-1.  The public directory where XML files will be saved. This MUST end in a trailing / and the Linux user MUST be able to write to it. If you followed the install steps you already specificed (and created if it did not exist).
-2.  The max pause (in seconds) bewteen downloading each XML file (not to be confused with the cron frequency). In this example it's 20 seconds.
+1.  The public directory where XML files will be saved. This MUST end in a trailing slash (/) and the Linux user MUST be able to write to it. If you followed the install steps you already specified and/or created this directory.
+2.  The max pause (in seconds) between downloading each XML file (not to be confused with the cron job's frequency). In this example it will pause up to 20 seconds between saving aliases.
 
 ```
 sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name/ 20

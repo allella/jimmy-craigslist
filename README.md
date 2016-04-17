@@ -15,7 +15,7 @@ should be able to avoid being blacklisted and life is good.
 
 ============================================================================
 
-INSTALLATION
+## Installation
 
 Prerequisites
 1. A Linux web server
@@ -25,7 +25,7 @@ Prerequisites
 By default we'll install in your Linux Home directory, which is private (not web accessible)
 ** Avoid installing the script itself in a public directory (i.e. don't save under public_html or www) ** 
 
-Method 1 - Download and Unzip (run the four commands that follow)
+### Method 1 - Download and Unzip
 ```
 cd ~ && wget https://github.com/allella/jimmy-craigslist/archive/master.zip
 unzip master.zip && mv jimmy-craigslist-master jimmy-craigslist
@@ -34,7 +34,7 @@ mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name
 ```
 ----------------------------------------------------------------------------
 
-Method 2 - Git ( run the three commands that follow)
+###Method 2 - Clone the Repo with Git
 ```
 cd ~ && git clone https://github.com/allella/jimmy-craigslist.git
 cd ~/jimmy-craigslist && chmod u+x jimmy-c.sh
@@ -42,7 +42,7 @@ mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name
 ```
 ============================================================================
 
-HOW TO RUN IT MANUALLY
+## How To Run It Manually
 
 Edit the feeds.csv file.
 Add one line for each Craigslist RSS Feed URL in the format {alias w/ no spaces}|{feed URL}
@@ -68,7 +68,6 @@ There are two parameters:
 sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name 20
 ```
 
-
 The script should run and, using the example above, you should now have two newly created
 XML files in your public directory. 
 
@@ -83,7 +82,7 @@ the XML however many times a day (just don't hammer the Craiglist server)
 
 ============================================================================
 
-SETTING UP AN AUTOMATIC CRON JOB / TAB
+## Setting Up An Automated Cron Job / Tab 
 
 From the Linux command line / shell (run the following command)
 

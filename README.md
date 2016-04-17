@@ -1,14 +1,12 @@
 ## Why You Would Care
 
 Nowadays, Craigslist RSS doesn't work with most RSS Readers because systems like
-AOL Reader, Feedly, Digg Reader are widely used and Craigslist blocks / blacklists
-those services' requests.
+AOL Reader, Feedly, Digg Reader. Any service which is widely used results in a high volume of requests going to Craigslist. They don't like the volume and block and blacklist those services' requesting IP addresses.
 
-Search the internet and you'll see where these services have asked Craigslist to whitelist
-their servers and Craiglist either blows them off or provides a temporary fix.
+Search the internet and you'll see where these reader services have asked Craigslist to whitelist
+their servers. Craiglist either doesn't care or provides, at best, a temporary fix.
 
-This script allows you to automatically download copies of Craigslist RSS feeds to your own
-web server and then provides those copies as public URLs to your RSS reader to consume.
+This script allows you to automatically save Craigslist RSS feed data to your own web server and provide an endpoint/URL for your favorite RSS reader to consume.
 
 As long as you're not hammering Craiglist (too many feed requests at once or too frequent), you
 should be able to avoid being blacklisted and life is good.

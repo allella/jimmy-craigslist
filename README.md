@@ -16,9 +16,9 @@ should be able to avoid being blacklisted and life is good.
 ## Installation
 
 ### Prerequisites
-1. A Linux web server
-2. Shell / command line access
-   (using SFTP/FTP and a control panel would work too but is not included in these docs)
+
+1.  A Linux web server
+2.  Shell / command line access (using SFTP/FTP and a control panel would work too but is not included in these docs)
 
 By default we'll install in your Linux Home directory, which is private (not web accessible)
 **Avoid installing the script itself in a public directory (i.e. don't save under public_html or www)** 
@@ -56,9 +56,9 @@ Now, to execute / test this run the following command from the command line / sh
 permissions to write to this directory
 
 There are command line input parameters:
-1. The public directory where things will be saved
-2. (ex. 20) The max pause (in seconds) bewteen downloading each XML file (not to be confused with how
-   frequently the cron runs)
+
+1.  The public directory where things will be saved
+2.  (ex. 20) The max pause (in seconds) bewteen downloading each XML file (not to be confused with how frequently the cron runs)
 
 ```
 sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name 20

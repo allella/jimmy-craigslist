@@ -71,29 +71,20 @@ From the Linux command line / shell (run the following command)
 ```
 crontab -e
 ```
+(Note, the cron is usually edited using vi. If you're not familiar with vi then know that you must press 'i' before you can type/insert. Then add your cron rule and press ESC and  then type :wq and Enter to save Or, to exit without saving hit ESC and then type :q! and hit Enter)
 
-(Note, the cron is usually edited using vi. If you're not familiar with vi then know that
- you must press 'i' before you can type/insert. Then add your cron rule and press ESC and
- then type :wq and Enter to save Or, to exit without saving hit ESC and then type :q! and hit Enter)
-
-When the cron opens up add a rule like this to run the script at
-
-Please change these values to fit your needs AND so everyone who uses this script
-isn't hitting Craigslist at the same time
-
-Keep in mind that if you run this very frequently then you're more likely to get blacklisted
-
-Also keep in mind there's a random delay (up to 20 seconds) between each XML file being saved
-in order to avoid hammering Craigslist.
-
-**If you are saving a lot of XML files and/or running the cron job very frequently then
-you run the risk of starting this script before an earlier instance has finished
-You can adjust the cron tab run times and the maxPause to avoid things getting weird**
+When the cron opens up add a rule like the following.
 
 ```
 # This will run at 8:50 AM , 12:50 AM, 4:45 PM, and 10:45 PM with a 20 second pause between each URL download
 50 8,12,16,20 * * * sh sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name/ 20
 ```
+
+### Rules For Setting Your Cron Timing
+* Please change these minute and hour values to fit your needs so everyone using this script isn't hitting Craigslist at the same time.
+* Keep in mind that if you run this very frequently then you're more likely to get blacklisted
+* here's a random delay (up to 20 seconds) between each XML file being saved in order to avoid hammering Craigslist.
+* **If you are saving a lot of XML files and/or running the cron job very frequently then you run the risk of starting this script before an earlier instance has finished. You can adjust the cron tab run times and the maxPause to avoid things getting weird**
 
 ## Submitting URLs To Your RSS Reader
 By now you should now have valid public URLS for each of your aliases.

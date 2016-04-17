@@ -28,14 +28,14 @@ By default we'll install in your Linux Home directory, which is private (not web
 cd ~ && wget https://github.com/allella/jimmy-craigslist/archive/master.zip
 unzip master.zip && mv jimmy-craigslist-master jimmy-craigslist
 cd ~/jimmy-craigslist && chmod u+x jimmy-c.sh
-mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name
+mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name/
 ```
 ----------------------------------------------------------------------------
 ###Method 2 - Clone the Repo with Git
 ```
 cd ~ && git clone https://github.com/allella/jimmy-craigslist.git
 cd ~/jimmy-craigslist && chmod u+x jimmy-c.sh
-mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name
+mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name/
 ```
 
 ## How To Run It Manually
@@ -57,11 +57,11 @@ permissions to write to this directory
 
 There are command line input parameters:
 
-1.  The public directory where things will be saved
+1.  The public directory where things will be saved. This MUST end in a trailing /.
 2.  (ex. 20) The max pause (in seconds) bewteen downloading each XML file (not to be confused with how frequently the cron runs)
 
 ```
-sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name 20
+sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name/ 20
 ```
 
 The script should run and, using the example above, you should now have two newly created
@@ -108,5 +108,5 @@ You can adjust the cron tab run times and the maxPause to avoid things getting w
 
 ```
 # This will run at 8:50 AM , 12:50 AM, 4:45 PM, and 10:45 PM with a 20 second pause between each URL download
-50 8,12,16,20 * * * sh sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name 20
+50 8,12,16,20 * * * sh sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name/ 20
 ```

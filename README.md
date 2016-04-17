@@ -1,4 +1,4 @@
-WHY YOU WOULD CARE
+## Why You Would Care
 
 Nowadays, Craigslist RSS doesn't work with most RSS Readers because systems like
 AOL Reader, Feedly, Digg Reader are widely used and Craigslist blocks / blacklists
@@ -17,7 +17,7 @@ should be able to avoid being blacklisted and life is good.
 
 ## Installation
 
-Prerequisites
+### Prerequisites
 1. A Linux web server
 2. Shell / command line access
    (using SFTP/FTP and a control panel would work too but is not included in these docs)
@@ -33,14 +33,12 @@ cd ~/jimmy-craigslist && chmod u+x jimmy-c.sh
 mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name
 ```
 ----------------------------------------------------------------------------
-
 ###Method 2 - Clone the Repo with Git
 ```
 cd ~ && git clone https://github.com/allella/jimmy-craigslist.git
 cd ~/jimmy-craigslist && chmod u+x jimmy-c.sh
 mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name
 ```
-============================================================================
 
 ## How To Run It Manually
 
@@ -71,8 +69,8 @@ sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-n
 The script should run and, using the example above, you should now have two newly created
 XML files in your public directory. 
 
-https://www.example.com/insert-a-public-directory-name/vise.xml
-https://www.example.com/insert-a-public-directory-name/work-bench.xml
+* https://www.example.com/insert-a-public-directory-name/vise.xml
+* https://www.example.com/insert-a-public-directory-name/work-bench.xml
 
 Replace the URLs above with your specific domain and directory and alias and those are
 the URLs you'd submit to your RSS Reader.
@@ -104,12 +102,11 @@ Keep in mind that if you run this very frequently then you're more likely to get
 Also keep in mind there's a random delay (up to 20 seconds) between each XML file being saved
 in order to avoid hammering Craigslist.
 
-****** If you are saving a lot of XML files and/or running the cron job very frequently then
-****** you run the risk of starting this script before an earlier instance has finished
-****** You can adjust the cron tab run times and the maxPause d
-
-# This will run at 8:50 AM , 12:50 AM, 4:45 PM, and 10:45 PM with a 20 second pause between each URL download
+**If you are saving a lot of XML files and/or running the cron job very frequently then
+you run the risk of starting this script before an earlier instance has finished
+You can adjust the cron tab run times and the maxPause to avoid things getting weird**
 
 ```
+# This will run at 8:50 AM , 12:50 AM, 4:45 PM, and 10:45 PM with a 20 second pause between each URL download
 50 8,12,16,20 * * * sh sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name 20
 ```

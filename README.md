@@ -68,9 +68,11 @@ The script should run and, using the example above, you should now have two newl
 XML files in your public directory. 
 
 ## Submitting URLs To Your RSS Reader
+By now you should now have valid public URLS for each of your aliases.
 
-* https://www.example.com/insert-a-public-directory-name/vise.xml
-* https://www.example.com/insert-a-public-directory-name/work-bench.xml
+```
+https://www.example.com/insert-a-public-directory-name/alias-name.xml
+```
 
 Replace the URLs above with your specific domain, public directory, and alias and you have
 the URLs you'd submit to your RSS Reader.

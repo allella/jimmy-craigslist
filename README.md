@@ -41,21 +41,21 @@ mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name
 ## How To Run It Manually
 
 Edit the feeds.csv file.
-Add one line for each Craigslist RSS Feed URL in the format {alias w/ no spaces}|{feed URL}
+Add one line for each Craigslist RSS feed URL in the format {alias w/ no spaces}|{feed URL}
 
 Here's an example of two URLs with the aliases 'vise' and 'work-bench'
 ```
 vise|https://yourcityhere.craigslist.org/search/sss?format=rss&amp;query=vise&amp;srchType=A
 work-bench|https://yourcityhere.craigslist.org/search/sss?format=rss&amp;query=work%20bench&amp;srchType=A
 ```
-Each Feed URL will be saved to an XML file in a public directory on your web server.
-You must specify a public directory when the this script is run (see below).
-The Linux user must have permissions to write to this directory
+Each feed URL will be saved to an XML file in a public directory on your web server.
+If you followed the install steps you already specificed (and created if it did not exist)
+a public directory to hold the XML files.
 
-For most folks this will look like /home/insert-your-username/public_html/insert-a-public-directory-name
+Now, to execute / test this run the following command from the command line / shell. The Linux user must have
+permissions to write to this directory
 
-Now, to execute / test this manually run the following command from the command line / shell.
-There are two parameters:
+There are command line input parameters:
 1. The public directory where things will be saved
 2. (ex. 20) The max pause (in seconds) bewteen downloading each XML file (not to be confused with how
    frequently the cron runs)

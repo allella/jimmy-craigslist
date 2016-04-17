@@ -38,7 +38,7 @@ cd ~/jimmy-craigslist && chmod u+x jimmy-c.sh
 mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name/
 ```
 
-## How To Run It Manually
+## How To Define Your Feeds and Aliases
 
 Edit the feeds.csv file.
 Add one line for each Craigslist RSS feed URL in the format {alias w/ no spaces}|{feed URL}
@@ -48,34 +48,17 @@ Here's an example of two URLs with the aliases 'vise' and 'work-bench'
 vise|https://yourcityhere.craigslist.org/search/sss?format=rss&amp;query=vise&amp;srchType=A
 work-bench|https://yourcityhere.craigslist.org/search/sss?format=rss&amp;query=work%20bench&amp;srchType=A
 ```
-Each feed URL will be saved to an XML file in a public directory on your web server.
-If you followed the install steps you already specificed (and created if it did not exist)
-a public directory to hold the XML files.
+## How to Manually Run / Test the Script
 
-Now, to execute / test this run the following command from the command line / shell. The Linux user must have
-permissions to write to this directory
-
-There are command line input parameters:
-
-1.  The public directory where things will be saved. This MUST end in a trailing /.
-2.  (ex. 20) The max pause (in seconds) bewteen downloading each XML file (not to be confused with how frequently the cron runs)
+This must run from the Linux command shell. There are two input parameters:
+1.  The public directory where XML files will be saved. This MUST end in a trailing / and the Linux user MUST be able to write to it. If you followed the install steps you already specificed (and created if it did not exist).
+2.  The max pause (in seconds) bewteen downloading each XML file (not to be confused with the cron frequency). In this example it's 20 seconds.
 
 ```
 sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name/ 20
 ```
 
-The script should run and, using the example above, you should now have two newly created
-XML files in your public directory. 
-
-## Submitting URLs To Your RSS Reader
-By now you should now have valid public URLS for each of your aliases.
-
-```
-https://www.example.com/insert-a-public-directory-name/alias-name.xml
-```
-
-Replace the URLs above with your specific domain, public directory, and alias and you have
-the URLs you'd submit to your RSS Reader.
+Once the script has successfully run you will have an XML file in your public directory for each line in feeds.csv
 
 ## Setting Up An Automated Cron Job / Tab 
 
@@ -110,3 +93,13 @@ You can adjust the cron tab run times and the maxPause to avoid things getting w
 # This will run at 8:50 AM , 12:50 AM, 4:45 PM, and 10:45 PM with a 20 second pause between each URL download
 50 8,12,16,20 * * * sh sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-name/ 20
 ```
+
+## Submitting URLs To Your RSS Reader
+By now you should now have valid public URLS for each of your aliases.
+
+```
+https://www.example.com/insert-a-public-directory-name/alias-name.xml
+```
+
+Replace the URLs above with your specific domain, public directory, and alias and you have
+the URLs you'd submit to your RSS Reader.

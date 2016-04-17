@@ -10,7 +10,7 @@ their servers. Craiglist either doesn't care or provides, at best, a temporary f
 
 This script allows you to automatically save Craigslist RSS feed data to your own web server and provide an endpoint/URL for your favorite RSS reader to consume.
 
-As long as you're not hammering Craiglist (too many feed requests at once or too frequent), you
+As long as you're not hammering Craiglist from a single IP address (too many feed requests at once or too frequent), you
 should be able to avoid being blacklisted and life is good.
 
 ## Installation

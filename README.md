@@ -1,7 +1,9 @@
 ## Why You Would Care
 
-Nowadays, Craigslist RSS doesn't work with most RSS Readers because systems like
-AOL Reader, Feedly, Digg Reader. Any service which is widely used results in a high volume of requests going to Craigslist. They don't like the volume and block and blacklist those services' requesting IP addresses.
+Nowadays, Craigslist RSS doesn't work with most popular RSS Readers like
+AOL Reader, Feedly, Digg Reader.
+
+Any service which is widely used results in a high volume of requests going to Craigslist. They don't like the volume and block and blacklist those services' requesting IP addresses.
 
 Search the internet and you'll see where these reader services have asked Craigslist to whitelist
 their servers. Craiglist either doesn't care or provides, at best, a temporary fix.

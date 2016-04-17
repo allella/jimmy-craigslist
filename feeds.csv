@@ -1,6 +1,0 @@
-# Add lines in the format like, alias|RSSFeedURL
-# The alias should not have spaces or weird characters
-#
-# Anything with a # at the front will be ignored.
-
-example|https://examplecity.craigslist.org/search/sss?format=rss&amp;query=chainsaw&amp;srchType=A

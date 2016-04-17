@@ -67,16 +67,18 @@ sh jimmy-c.sh /home/insert-your-username/public_html/insert-a-public-directory-n
 The script should run and, using the example above, you should now have two newly created
 XML files in your public directory. 
 
+## Submitting URLs To Your RSS Reader
+
 * https://www.example.com/insert-a-public-directory-name/vise.xml
 * https://www.example.com/insert-a-public-directory-name/work-bench.xml
 
-Replace the URLs above with your specific domain and directory and alias and those are
+Replace the URLs above with your specific domain, public directory, and alias and you have
 the URLs you'd submit to your RSS Reader.
+
+## Setting Up An Automated Cron Job / Tab 
 
 The only step left is to create a cron tab / job to schedule your server to fetch and save
 the XML however many times a day (just don't hammer the Craiglist server)
-
-## Setting Up An Automated Cron Job / Tab 
 
 From the Linux command line / shell (run the following command)
 

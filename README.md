@@ -13,8 +13,6 @@ web server and then provides those copies as public URLs to your RSS reader to c
 As long as you're not hammering Craiglist (too many feed requests at once or too frequent), you
 should be able to avoid being blacklisted and life is good.
 
-============================================================================
-
 ## Installation
 
 ### Prerequisites
@@ -23,7 +21,7 @@ should be able to avoid being blacklisted and life is good.
    (using SFTP/FTP and a control panel would work too but is not included in these docs)
 
 By default we'll install in your Linux Home directory, which is private (not web accessible)
-** Avoid installing the script itself in a public directory (i.e. don't save under public_html or www) ** 
+**Avoid installing the script itself in a public directory (i.e. don't save under public_html or www)** 
 
 ### Method 1 - Download and Unzip
 ```
@@ -46,10 +44,10 @@ Edit the feeds.csv file.
 Add one line for each Craigslist RSS Feed URL in the format {alias w/ no spaces}|{feed URL}
 
 Here's an example of two URLs with the aliases 'vise' and 'work-bench'
-
+```
 vise|https://yourcityhere.craigslist.org/search/sss?format=rss&amp;query=vise&amp;srchType=A
 work-bench|https://yourcityhere.craigslist.org/search/sss?format=rss&amp;query=work%20bench&amp;srchType=A
-
+```
 Each Feed URL will be saved to an XML file in a public directory on your web server.
 You must specify a public directory when the this script is run (see below).
 The Linux user must have permissions to write to this directory
@@ -77,8 +75,6 @@ the URLs you'd submit to your RSS Reader.
 
 The only step left is to create a cron tab / job to schedule your server to fetch and save
 the XML however many times a day (just don't hammer the Craiglist server)
-
-============================================================================
 
 ## Setting Up An Automated Cron Job / Tab 
 

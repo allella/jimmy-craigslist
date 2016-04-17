@@ -51,6 +51,7 @@ work-bench|https://yourcityhere.craigslist.org/search/sss?format=rss&amp;query=w
 ## How to Manually Run / Test the Script
 
 This must run from the Linux command shell. There are two input parameters:
+
 1.  The public directory where XML files will be saved. This MUST end in a trailing / and the Linux user MUST be able to write to it. If you followed the install steps you already specificed (and created if it did not exist).
 2.  The max pause (in seconds) bewteen downloading each XML file (not to be confused with the cron frequency). In this example it's 20 seconds.
 

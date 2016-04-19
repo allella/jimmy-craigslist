@@ -1,3 +1,6 @@
+## Disclaimer
+[Craigstlist's terms of use](https://www.craigslist.org/about/terms.of.use) prohibit scraper, bots, etc.  However, Craiglist provides RSS feeds, therefore expecting and endorsing the use of RSS readers. This code is effectively a personal RSS reader which you can use to save a copy of RSS data.
+
 ## Why You Would Care
 
 Nowadays, Craigslist RSS doesn't work with most popular RSS Readers like

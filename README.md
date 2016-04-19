@@ -1,10 +1,9 @@
 ## Disclaimer
-[Craigstlist's terms of use](https://www.craigslist.org/about/terms.of.use) prohibit scraper, bots, etc.  However, Craiglist provides RSS feeds, therefore expecting and endorsing the use of RSS readers. This code is effectively a personal RSS reader which you can use to save a copy of RSS data.
+[Craigstlist's terms of use](https://www.craigslist.org/about/terms.of.use) prohibit scraper, bots, etc.  However, Craiglist provides RSS feeds, therefore expecting and endorsing the use of RSS readers. This code is effectively a personal RSS reader which saves a copy of RSS data and allows real RSS readers (AOL Reader, Feedly, Digg Reader) to consume your personal copies.
 
 ## Why You Would Care
 
-Nowadays, Craigslist RSS doesn't work with most popular RSS Readers like
-AOL Reader, Feedly, Digg Reader.
+Nowadays, Craigslist RSS doesn't work with most popular RSS Readers.
 
 Any service which is widely used results in a high volume of requests going to Craigslist. They don't like the volume and block and blacklist those services' requesting IP addresses.
 

@@ -1,5 +1,5 @@
 ## Disclaimer
-[Craigstlist's terms of use](https://www.craigslist.org/about/terms.of.use) prohibit scraper, bots, etc.  However, Craiglist provides RSS feeds, therefore expecting and endorsing the use of RSS readers. This code is effectively a personal RSS reader which saves a copy of RSS data and allows real RSS readers (AOL Reader, Feedly, Digg Reader) to consume your personal copies.
+[Craigslist's terms of use](https://www.craigslist.org/about/terms.of.use) prohibit scraper, bots, etc.  However, Craiglist provides RSS feeds, therefore expecting and endorsing the use of RSS readers. This code is effectively a personal RSS reader which saves a copy of RSS data and allows real RSS readers (AOL Reader, Feedly, Digg Reader) to consume your personal copies.
 
 ## Why You Would Care
 

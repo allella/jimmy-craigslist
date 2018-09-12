@@ -33,7 +33,7 @@ cd ~/jimmy-craigslist && chmod u+x jimmy-c.sh
 mkdir -p /home/insert-your-username/public_html/insert-a-public-directory-name/
 ```
 ----------------------------------------------------------------------------
-###Method 2 - Clone the Repo with Git
+### Method 2 - Clone the Repo with Git
 ```
 cd ~ && git clone https://github.com/allella/jimmy-craigslist.git
 cd ~/jimmy-craigslist && chmod u+x jimmy-c.sh

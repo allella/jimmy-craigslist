@@ -18,11 +18,14 @@ should be able to avoid being blacklisted and life is good.
 
 ### Google Groups, Google News, and Google RSS Feeds with Feedly
 
-This may also come in handy to self-poll feeds from Google Groups, Google Alerts, and Google News, thus saving personal copy and providing a non-traditional domain and URL which you can then provide to readers like Feedly.
+This may also come in handy to self-poll feeds from Google Groups, Google Alerts, and Google News, thus saving a personal copy of each RSS feed and providing a non-traditional domain and URL which you can then provide to readers, like Feedly.
 
-To learn about the avaiable RSS feeds for Google Groups use the following pattern, where "YOUR-GROUPS-URL-NAME-KEY-HERE" is the last part of base the URL for your group
+To learn about the available RSS feeds provided by Google Groups just try the following pattern, where "URL-KEY-HERE" is the last part of base the URL for your group.
 
-https://groups.google.com/forum/#!aboutgroup/YOUR-GROUPS-URL-NAME-KEY-HERE
+Example. If you'r group URL is
+https://groups.google.com/forum/#!forum/URL-KEY-HERE
+then visit
+https://groups.google.com/forum/#!aboutgroup/URL-KEY-HERE
 
 ## Installation
 

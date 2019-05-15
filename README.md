@@ -20,6 +20,10 @@ should be able to avoid being blacklisted and life is good.
 
 This may also come in handy to self-poll feeds from Google Groups, Google Alerts, and Google News, thus saving personal copy and providing a non-traditional domain and URL which you can then provide to readers like Feedly.
 
+To learn about the avaiable RSS feeds for Google Groups use the following pattern, where "YOUR-GROUPS-URL-NAME-KEY-HERE" is the last part of base the URL for your group
+
+https://groups.google.com/forum/#!aboutgroup/YOUR-GROUPS-URL-NAME-KEY-HERE
+
 ## Installation
 
 ### Prerequisites
@@ -54,6 +58,7 @@ Here's an example of two URLs with the aliases 'vise' and 'work-bench'
 ```
 vise|https://yourcityhere.craigslist.org/search/sss?format=rss&amp;query=vise&amp;srchType=A
 work-bench|https://yourcityhere.craigslist.org/search/sss?format=rss&amp;query=work%20bench&amp;srchType=A
+some-google-group|https://groups.google.com/forum/feed/some-google-group/topics/rss.xml?num=15
 ```
 ## How to Manually Run / Test the Script
 

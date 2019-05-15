@@ -3,6 +3,7 @@
 
 ## Why You Would Care
 
+### Craigslist Feeds
 Nowadays, Craigslist RSS doesn't work with most popular RSS Readers.
 
 Any service which is widely used results in a high volume of requests going to Craigslist. They don't like the volume and block and blacklist those services' requesting IP addresses.
@@ -14,6 +15,8 @@ This script allows you to automatically save Craigslist RSS feed data to your ow
 
 As long as you're not hammering Craiglist from a single IP address (too many feed requests at once or too frequent), you
 should be able to avoid being blacklisted and life is good.
+
+### Google Groups, Google News, and Google RSS Feeds with Feedly
 
 This may also come in handy to self-poll feeds from Google Groups, Google Alerts, and Google News, thus saving personal copy and providing a non-traditional domain and URL which you can then provide to readers like Feedly.
 

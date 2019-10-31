@@ -1,6 +1,11 @@
 ## Disclaimer
 [Craigslist's terms of use](https://www.craigslist.org/about/terms.of.use) prohibit scraper, bots, etc.  However, Craiglist provides RSS feeds, therefore expecting and endorsing the use of RSS readers. This code is effectively a personal RSS reader which saves a copy of RSS data and allows real RSS readers (AOL Reader, Feedly, Digg Reader) to consume your personal copies.
 
+** Also, CL likely will block popular, cheap hosting services such as Digital Ocean. If you immediately get a message like the following, then the issue is likely a broad blocking of the host's IP range.
+
+``This IP has been automatically blocked.
+If you have questions, please email: blocks-b1565046728099160@craigslist.org``
+
 ## Why You Would Care
 
 ### Craigslist Feeds

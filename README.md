@@ -1,3 +1,8 @@
+## End of Life
+Craigslist has disabled use of the RSS feed links. This was after they started blocking well-known hosting IP ranges.
+
+For now, I'm not aware of an RSS alternative, but you can enable email notifications in Craigslist by using the "Save Search" link in the search results.
+
 ## Disclaimer
 [Craigslist's terms of use](https://www.craigslist.org/about/terms.of.use) prohibit scraper, bots, etc.  However, Craiglist provides RSS feeds, therefore expecting and endorsing the use of RSS readers. This code is effectively a personal RSS reader which saves a copy of RSS data and allows real RSS readers (AOL Reader, Feedly, Digg Reader) to consume your personal copies.
 
